@@ -1,0 +1,33 @@
+.screenshot {
+    animation:translate1 4s linear;
+    animation-iteration-count: infinite;
+  max-width: 20rem;
+  position: relative;
+}
+.voice-dialog {
+    animation:translate1 4s linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  max-width: 15rem;
+  position: relative;
+  z-index: 5;
+  left: -12rem;
+}
+
+.header-img{
+  animation: translate1 3s linear;
+  animation-iteration-count: infinite;
+  width:40rem;
+}
+
+@keyframes translate1 {
+  /* 0% {
+    transform: translateY(0);
+  } */
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

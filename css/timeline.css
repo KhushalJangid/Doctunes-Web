@@ -1,0 +1,208 @@
+/* -------------How_It_Works-Section-Css-Start------------------ */
+
+/* how it works wraper */
+.how_it_works .container {
+    max-width: 1370px;
+}
+
+.how_it_works .how_it_inner {
+    background-color: var(--bg-white);
+    padding: 70px 0;
+   /* padding-bottom: 250px;*/
+    border-radius: 30px;
+    box-shadow: 0px 4px 30px #EDE9FE;
+    display: flex;
+    flex-direction: column;
+}
+
+/* how it works list */
+.how_it_works .step_block ul {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.how_it_works .step_block ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.how_it_works .step_block ul li::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    width: 4px;
+    height: calc(100% + 100px);
+    background-color: var(--light-bg);
+}
+
+.how_it_works .step_block ul li:first-child::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background-color: var(--light-bg);
+    border-radius: 15px;
+}
+
+.how_it_works .step_block ul li:first-child::before {
+    top: 0;
+}
+
+.how_it_works .step_block ul li:last-child::before {
+    height: 50%;
+    top: 0;
+}
+
+.how_it_works .step_block ul li .step_text,
+.how_it_works .step_block ul li .step_img {
+    width: 360px;
+    text-align: right;
+}
+
+/* how it works image */
+.how_it_works .step_block ul li .step_img img {
+    max-width: 100%;
+}
+
+/* how it works heading h4 */
+.how_it_works .step_block ul li .step_text h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.how_it_works .step_block ul li .step_text .app_icon {
+    margin-bottom: 10px;
+}
+
+.how_it_works .step_block ul li .step_text .app_icon a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--light-bg);
+    color: var(--text-white);
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    transition: .4s all;
+}
+
+.how_it_works .step_block ul li .step_text .app_icon a:hover {
+    background-color: var(--purple);
+}
+
+.how_it_works .step_block ul li .step_text span {
+    font-weight: 600;
+}
+
+.how_it_works .step_block ul li .step_text span a {
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+.how_it_works .step_block ul li:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.how_it_works .step_block ul li:nth-child(2) .step_text,
+.how_it_works .step_block ul li:nth-child(2) .step_img {
+    text-align: left;
+}
+
+/* how it works numbers */
+.how_it_works .step_block ul li .step_number {
+    background-image: url("../assets/How It works/icon_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* how it works numbers heading h3 */
+.how_it_works .step_block ul li .step_number h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-top:0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* how it works video  */
+.how_it_works .yt_video {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: -200px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.how_it_works .yt_video .thumbnil {
+    position: relative;
+}
+
+.how_it_works .yt_video .thumbnil img {
+    max-width: 100%;
+}
+
+.how_it_works .yt_video .thumbnil a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text-white);
+    font-weight: 600;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.how_it_works .yt_video .thumbnil a span {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.how_it_works .yt_video .thumbnil a .play_btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 96px;
+    height: 96px;
+    border-radius: 100px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 96px;
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.how_it_works .yt_video .thumbnil a .play_btn img {
+    width: 50px;
+    position: relative;
+    z-index: 999;
+}
+
+/* how it works video model   */
+.modal {
+    z-index: 999999;
+}
+
+.modal-backdrop.show {
+    z-index: 99999;
+    opacity: .7;
+}
