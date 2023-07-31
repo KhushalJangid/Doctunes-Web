@@ -64,7 +64,7 @@
 $(document).ready(function(){
 $('#screen_slider').owlCarousel({
     loop:true,
-    margin:10,
+    margin:0,
     nav:false,
     dots: true,
     autoplay: true,
@@ -74,11 +74,11 @@ $('#screen_slider').owlCarousel({
         0:{
             items:1
         },
-        600:{
-            items:3
-        },
+        // 600:{
+        //     items:3
+        // },
         1000:{
-            items:9
+            items:7
         }
     }
 });

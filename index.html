@@ -11,55 +11,55 @@
     <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/timeline.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <!-- <link rel="stylesheet" href="css/aos.css"> -->
   </head>
   <body>
     <div class="navbar desktop-only">
       <h2>DocTunes</h2>
       <div class="d-flex">
-        <a href=""><h4>Home</h4></a>
-        <a href=""><h4>How it works</h4></a>
-        <a href=""><h4>Features</h4></a>
-        <a href=""><h4>Pricing</h4></a>
-        <a href=""><h4>Screenshots</h4></a>
-        <a href=""><h4>Team</h4></a>
-        <a href=""><h4>Contact</h4></a>
+        <a href="#home"><h4>Home</h4></a>
+        <a href="#how_it_work"><h4>How it works</h4></a>
+        <a href="#features-ds"><h4>Features</h4></a>
+        <a href="#pricing"><h4>Pricing</h4></a>
+        <a href="#screenshots"><h4>Screenshots</h4></a>
+        <a href="#team"><h4>Team</h4></a>
+        <a href="#contact"><h4>Contact</h4></a>
       </div>
       <button class="btn">Download</button>
     </div>
-    <div class="navbar mobile-only" >
-      <div class="d-flex">
+    <div class="navbar mobile-only">
+      <div class="d-flex m-auto">
         <h2>DocTunes</h2>
         <button id="navbar-toggle"><i id="icon" class="arrow down"></i></button>
       </div>
       <div class="navbar-collapsed" id="nav-content" collapsed="true">
-        <a href=""><h4>Home</h4></a>
-        <a href=""><h4>How it works</h4></a>
-        <a href=""><h4>Features</h4></a>
-        <a href=""><h4>Pricing</h4></a>
-        <a href=""><h4>Screenshots</h4></a>
-        <a href=""><h4>Team</h4></a>
-        <a href=""><h4>Contact</h4></a>
+        <a href="#home"><h4>Home</h4></a>
+        <a href="#how_it_work"><h4>How it works</h4></a>
+        <a href="#features-mb"><h4>Features</h4></a>
+        <a href="#pricing"><h4>Pricing</h4></a>
+        <a href="#screenshots"><h4>Screenshots</h4></a>
+        <a href="#team"><h4>Team</h4></a>
+        <a href="#contact"><h4>Contact</h4></a>
         <button class="btn">Download</button>
+      </div>
+    </div>
+    <section class="header-section" id="home">
+      <div class="d-flex flex-column white my-auto">
+        <h1 class="my-5">DocTunes<br />Embrace the exrtraordinary</h1>
+        <h4 class="my-5">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti nobis voluptate atque tenetur minus
+        </h4>
+        <div class="d-flex my-5 justify-content-evenly">
+          <a href="" target="_blank" class="store-btn" rel="noopener noreferrer">
+            <img src="assets/Header Section/Appstore.svg" alt="" />
+          </a>
+          <a href="" target="_blank" class="store-btn" rel="noopener noreferrer">
+            <img src="assets/Header Section/logos_google-play.svg" alt="" />
+          </a>
         </div>
       </div>
-    <section class="header-section">
-        <div class="d-flex flex-column white my-auto">
-          <h1 class="my-5">DocTunes<br />Embrace the exrtraordinary</h1>
-          <h4 class="my-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti nobis voluptate atque tenetur minus
-          </h4>
-          <div class="d-flex my-5 justify-content-evenly">
-            <a href="" target="_blank" class="store-btn" rel="noopener noreferrer">
-              <img src="assets/Header Section/Appstore.svg" alt="">
-            </a>
-            <a href="" target="_blank" class="store-btn" rel="noopener noreferrer">
-              <img src="assets/Header Section/logos_google-play.svg" alt="">
-            </a>
-          </div>
-        </div>
-        <img class="header-img" src="assets/Header Section/Mobile.svg" alt="" srcset="" />
+      <img class="header-img" src="assets/Header Section/Mobile.svg" alt="" srcset="" />
     </section>
     <section class="row_am how_it_works m-auto desktop-only" id="how_it_work">
       <!-- container start -->
@@ -67,7 +67,7 @@
         <div class="how_it_inner">
           <div class="section_title mx-auto my-5">
             <!-- h2 -->
-            <h2 ><span class="primary">How it works</span> - 3 easy steps</h2>
+            <h2><span class="primary">How it works</span> - 3 easy steps</h2>
             <!-- p -->
             <p>
               Lorem Ipsum is simply dummy text of the printing and typese tting <br />
@@ -161,7 +161,7 @@
         </div>
       </div>
     </section>
-    <section class="d-flex flex-column desktop-only my-5">
+    <section class="d-flex flex-column desktop-only my-5" id="features-ds">
       <h1 class="mx-auto"><span class="primary">Features</span> that make app different!</h1>
       <h4 class="my-4 mx-auto" style="max-width: 35rem">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odio omnis commodi dolore illo mollitia dolores
@@ -210,49 +210,45 @@
         </div>
       </div>
     </section>
-    <section class="d-flex flex-column mobile-only">
+    <section class="d-flex flex-column mobile-only" id="features-mb">
       <h1 class="mx-auto"><span class="primary">Features</span> that make app different!</h1>
       <h4 class="my-4 mx-auto" style="max-width: 35rem">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odio omnis commodi dolore illo mollitia dolores
         quasi voluptatem ullam praesentium quibusdam, beatae earum, dicta error impedit quas consequuntur, at eum?
       </h4>
-        <div class="d-flex flex-column">
-          <div class="spacer"></div>
-          <img
-            src="assets/Features that make/best-customer-experience.png"
-            class="icon my-2 mx-auto"
-            alt=""
-            srcset="" />
-          <h3 class="primary mx-auto">Simple UX</h3>
-          <p style="max-width: 10rem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum laboriosam voluptatem cum provident
-            aliquam, aut voluptates rerum!
-          </p>
-          <div class="spacer"></div>
-          <img src="assets/Features that make/voice-assistant.png" class="icon my-2 mx-auto" alt="" srcset="" />
+      <div class="d-flex flex-column">
+        <div class="spacer"></div>
+        <img src="assets/Features that make/best-customer-experience.png" class="icon my-2 mx-auto" alt="" srcset="" />
+        <h3 class="primary mx-auto">Simple UX</h3>
+        <p style="max-width: 10rem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum laboriosam voluptatem cum provident
+          aliquam, aut voluptates rerum!
+        </p>
+        <div class="spacer"></div>
+        <img src="assets/Features that make/voice-assistant.png" class="icon my-2 mx-auto" alt="" srcset="" />
 
-          <h3 class="primary mx-auto">Different Voice</h3>
-          <p style="max-width: 10rem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel dolores, velit ducimus fugiat tempore
-          </p>
-          <div class="spacer"></div>
-            <img src="assets/Features that make/languages.png" class="icon my-2 mx-auto" alt="" srcset="" />
-  
-            <h3 class="primary">Multi Language</h3>
-            <p style="max-width: 10rem">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum laboriosam voluptatem cum provident
-              aliquam, aut voluptates rerum!
-            </p>
-            <div class="spacer"></div>
-            <img src="assets/Features that make/multimedia.png" class="icon my-2 mx-auto" alt="" srcset="" />
-  
-            <h3 class="primary mx-auto">Custom Playback</h3>
-            <p style="max-width: 10rem">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel dolores, velit ducimus fugiat tempore
-            </p>
-            <div class="spacer"></div>
-            <img src="assets/Features that make/ss.png" class="mx-auto" style="max-width: 20rem" alt="" srcset="" />
-        </div>
+        <h3 class="primary mx-auto">Different Voice</h3>
+        <p style="max-width: 10rem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel dolores, velit ducimus fugiat tempore
+        </p>
+        <div class="spacer"></div>
+        <img src="assets/Features that make/languages.png" class="icon my-2 mx-auto" alt="" srcset="" />
+
+        <h3 class="primary">Multi Language</h3>
+        <p style="max-width: 10rem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum laboriosam voluptatem cum provident
+          aliquam, aut voluptates rerum!
+        </p>
+        <div class="spacer"></div>
+        <img src="assets/Features that make/multimedia.png" class="icon my-2 mx-auto" alt="" srcset="" />
+
+        <h3 class="primary mx-auto">Custom Playback</h3>
+        <p style="max-width: 10rem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel dolores, velit ducimus fugiat tempore
+        </p>
+        <div class="spacer"></div>
+        <img src="assets/Features that make/ss.png" class="mx-auto" style="max-width: 20rem" alt="" srcset="" />
+      </div>
     </section>
     <section class="awesome-words">
       <div class="d-flex flex-column">
@@ -262,7 +258,7 @@
           dolores quasi voluptatem ullam praesentium quibusdam, beatae earum, dicta error impedit quas consequuntur, at
           eum?
         </h4>
-        <div class="d-flex">
+        <div class="numcard-outer">
           <div class="numcard">
             <div class="icon-bg my-auto mx-5">
               <img class="icon-sm" src="assets/Awsome Words/download.png" alt="" srcset="" />
@@ -284,7 +280,7 @@
           </div>
         </div>
         <div class="spacer-xs"></div>
-        <div class="d-flex">
+        <div class="numcard-outer">
           <div class="numcard">
             <div class="icon-bg my-auto mx-5">
               <img class="icon-sm" src="assets/Awsome Words/rating.png" alt="" srcset="" />
@@ -314,13 +310,13 @@
     <section class="review-section">
       <h4 class="primary">Testimonial</h4>
       <h2>A Lot of Love From<br />Our Happy Clients</h2>
-      <div class="d-flex justify-content-evenly my-5">
-        <img src="assets/Reviews/1.png" alt="" srcset="">
-        <img src="assets/Reviews/2.png" alt="" srcset="">
-        <img src="assets/Reviews/3.png" alt="" srcset="">
+      <div class="review-inner">
+        <img src="assets/Reviews/1.png" alt="" srcset="" />
+        <img src="assets/Reviews/2.png" alt="" srcset="" />
+        <img src="assets/Reviews/3.png" alt="" srcset="" />
       </div>
     </section>
-    <section class="d-flex flex-column text-center">
+    <section class="d-flex flex-column text-center" id="pricing">
       <h1 class="mx-auto">Best & simple <span class="primary"> pricing</span></h1>
       <h5 class="mx-auto">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sint ullam voluptatum placeat ducimus neque
@@ -367,24 +363,26 @@
         </div>
       </div>
     </section>
-    <section class="d-flex flex-column text-center">
+    <section class="d-flex flex-column text-center" id="screenshots">
       <h1 class="mx-auto my-3">Beautiful <span class="primary">Interface</span></h1>
       <h5 class="mx-auto mb-5">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sint ullam voluptatum placeat ducimus neque
         nemo quos voluptates. Illum quo facilis debitis quia inventore, ut ducimus harum suscipit voluptatum autem.
       </h5>
       <div id="screen_slider" class="owl-carousel owl-theme my-5">
-              <img src="assets/Screens/1.png" alt="image" >
-              <img src="assets/Screens/2.png" alt="image" >
-              <img src="assets/Screens/3.png" alt="image" >
-              <img src="assets/Screens/4.png" alt="image" >
-              <img src="assets/Screens/5.png" alt="image" >
-              <img src="assets/Screens/6.png" alt="image" >
-              <img src="assets/Screens/7.png" alt="image" >
-              <img src="assets/Screens/8.png" alt="image" >
-              <img src="assets/Screens/9.png" alt="image" >
-
-    </div>
+        <img src="assets/Screens/1.PNG" alt="image" />
+        <img src="assets/Screens/2.PNG" alt="image" />
+        <img src="assets/Screens/3.PNG" alt="image" />
+        <img src="assets/Screens/4.PNG" alt="image" />
+        <img src="assets/Screens/5.PNG" alt="image" />
+        <img src="assets/Screens/6.PNG" alt="image" />
+        <img src="assets/Screens/7.PNG" alt="image" />
+        <img src="assets/Screens/8.PNG" alt="image" />
+        <img src="assets/Screens/9.PNG" alt="image" />
+        <img src="assets/Screens/10.PNG" alt="image" />
+        <img src="assets/Screens/11.PNG" alt="image" />
+        <img src="assets/Screens/12.PNG" alt="image" />
+      </div>
     </section>
     <section class="faq-section">
       <h1><span class="primary">FAQ</span> - Frequently Asked Questions</h1>
@@ -432,24 +430,24 @@
         <img src="assets/Partners/meity startup.png" alt="" class="sponsor-logo" />
       </div>
     </section>
-    <section class="d-flex flex-column text-ceter my-3">
+    <section class="d-flex flex-column text-ceter my-3" id="team">
       <h1 class="primary">Our Team</h1>
       <div class="team-section">
         <div class="card">
-          <img src="" alt="" class="avatar mx-auto" />
+          <img src="assets/Avatars/kss.jpg" alt="" class="avatar mx-auto" />
           <h3>Kunal Singh</h3>
           <h4>Director & Co-founder</h4>
         </div>
         <div class="spacer"></div>
         <div class="card">
-          <img src="" alt="" class="avatar mx-auto" />
+          <img src="assets/Avatars/db.JPG" alt="" class="avatar mx-auto" />
           <h3>Dewang Bharadwaj</h3>
           <h4>Director & Co-founder</h4>
         </div>
       </div>
     </section>
 
-    <section class="d-flex flex-column text-ceter my-3">
+    <section class="d-flex flex-column text-ceter my-3" id="contact">
       <h1 class="primary">Contact Us</h1>
       <h5 class="my-3">If you have a query, get in touch with us, we will revert back quickly</h5>
       <div class="contact-section">
@@ -520,14 +518,17 @@
       <div class="d-flex flex-column">
         <h3>Let's Try out</h3>
         <a href="" target="_blank" class="store-btn mx-0 my-5" rel="noopener noreferrer">
-          <img src="assets/Header Section/Appstore.svg" alt="">
+          <img src="assets/Header Section/Appstore.svg" alt="" />
         </a>
         <a href="" target="_blank" class="store-btn mx-0" rel="noopener noreferrer">
-          <img src="assets/Header Section/logos_google-play.svg" alt="">
+          <img src="assets/Header Section/logos_google-play.svg" alt="" />
         </a>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+      integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+      crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <script src="js/carousel.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>

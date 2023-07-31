@@ -198,6 +198,10 @@ input:focus {
   max-width: 18rem;
 }
 
+.numcard-outer{
+  display: flex;
+}
+
 .numcard {
   background-color: white;
   border-radius: 20px;
@@ -281,6 +285,12 @@ input:focus {
   padding: 5rem;
   justify-content: center;
   background-color: white;
+}
+.review-inner{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .contact-section {
   display: flex;
@@ -445,6 +455,8 @@ input:focus {
     display: none !important;
   }
   .navbar {
+    padding: 0 5rem;
+    text-align: center;
     flex-direction: column;
     background: linear-gradient(to right, #2196f0, #1c91c9);
   }
@@ -462,6 +474,14 @@ input:focus {
   }
   .header-img{
     width:93vw !important;
+  }
+  .numcard-outer{
+    flex-direction: column;
+  }
+  .numcard{
+    height: 5.5rem;
+    width: 20rem;
+    margin: auto;
   }
   .contact-form {
     width: 85vw;
@@ -491,6 +511,12 @@ input:focus {
     margin-left: auto;
     margin-right: auto;
   }
+  .review-section{
+    padding: 4rem;
+  }
+  .review-inner{
+    flex-direction: column;
+  }
   .voice-dialog{
     left: 4rem !important;
     top:-400px;
@@ -498,5 +524,8 @@ input:focus {
   .footer a{
     margin-left: auto;
     margin-right: auto;
+  }
+  .accordion-wrapper{
+    width: 95%;
   }
 }
