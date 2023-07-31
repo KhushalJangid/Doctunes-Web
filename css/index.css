@@ -135,7 +135,7 @@ input:focus {
   flex-direction: column;
 }
 
-.text-ceter {
+.text-center {
   text-align: center;
 }
 
@@ -198,7 +198,7 @@ input:focus {
   max-width: 18rem;
 }
 
-.numcard-outer{
+.numcard-outer {
   display: flex;
 }
 
@@ -286,7 +286,7 @@ input:focus {
   justify-content: center;
   background-color: white;
 }
-.review-inner{
+.review-inner {
   display: flex;
   justify-content: space-evenly;
   margin-top: 2rem;
@@ -350,9 +350,10 @@ input:focus {
   transition: height 0.5s;
   transition-timing-function: linear;
 }
-#navbar-toggle{
+#navbar-toggle {
   border: none;
-  background-color: transparent;padding: 1rem;
+  background-color: transparent;
+  padding: 1rem;
 }
 .arrow {
   border: solid white;
@@ -460,25 +461,24 @@ input:focus {
     flex-direction: column;
     background: linear-gradient(to right, #2196f0, #1c91c9);
   }
-  .header-section{
+  .header-section {
     flex-direction: column;
     padding: 6rem 1rem;
     height: 145vh;
   }
-  .header-section>.d-flex>.d-flex{
+  .header-section > .d-flex > .d-flex {
     flex-direction: column;
-    
   }
-  .header-section>.d-flex>.d-flex>a{
+  .header-section > .d-flex > .d-flex > a {
     margin: 2rem auto;
   }
-  .header-img{
-    width:93vw !important;
+  .header-img {
+    width: 93vw !important;
   }
-  .numcard-outer{
+  .numcard-outer {
     flex-direction: column;
   }
-  .numcard{
+  .numcard {
     height: 5.5rem;
     width: 20rem;
     margin: auto;
@@ -489,7 +489,7 @@ input:focus {
     margin-left: auto;
     margin-top: auto;
   }
-  .contact-section{
+  .contact-section {
     padding: 5rem 2rem;
   }
   html {
@@ -507,25 +507,106 @@ input:focus {
     flex-direction: column;
     text-align: center;
   }
-  .feature-section *{
+  .feature-section * {
     margin-left: auto;
     margin-right: auto;
   }
-  .review-section{
+  .review-section {
     padding: 4rem;
   }
-  .review-inner{
+  .review-inner {
     flex-direction: column;
   }
-  .voice-dialog{
+  .voice-dialog {
     left: 4rem !important;
-    top:-400px;
+    top: -400px;
   }
-  .footer a{
+  .footer a {
     margin-left: auto;
     margin-right: auto;
   }
-  .accordion-wrapper{
+  .accordion-wrapper {
     width: 95%;
+  }
+
+  .how_it_works .how_it_inner {
+    padding: 50px 15px !important;
+  }
+  .how_it_works .step_block ul {
+    padding-top: 30px !important;
+  }
+  .how_it_works .step_block ul li,
+  .how_it_works .step_block ul li:nth-child(2) {
+    flex-direction: column !important;
+    padding-left: 30px !important;
+  }
+  .how_it_works .step_block ul li .step_text h4 {
+    font-size: 18px !important;
+  }
+  .how_it_works .step_block ul li::before {
+    left: 0 !important;
+    transform: none !important;
+    height: calc(100% + 10px) !important;
+    top: 40px !important;
+  }
+  .how_it_works .step_block ul li:first-child::before {
+    height: calc(100% + 50px) !important;
+  }
+  .how_it_works .step_block ul li:first-child::after {
+    left: -5px !important;
+    transform: none !important;
+    display: none !important;
+  }
+  .how_it_works .step_block ul li .step_text,
+  .how_it_works .step_block ul li .step_img,
+  .how_it_works .step_block ul li:nth-child(2) .step_text,
+  .how_it_works .step_block ul li:nth-child(2) .step_img {
+    text-align: center !important;
+  }
+  .how_it_works .step_block ul li .step_text,
+  .how_it_works .step_block ul li .step_img {
+    width: 100% !important;
+  }
+  .how_it_works .step_block ul li .step_number {
+    position: absolute !important;
+    top: -5px;
+    left: -23px;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .how_it_works .step_block ul li:last-child::before {
+    opacity: 0 !important;
+  }
+  .how_it_works .step_block ul li .step_number h3 {
+    font-size: 15px !important;
+    margin-bottom: 0 !important;
+    margin-top: -2px !important;
+  }
+  .how_it_works .yt_video {
+    margin-top: -50px;
+  }
+  .how_it_works .yt_video .thumbnil {
+    height: 300px;
+    border-radius: 15px;
+  }
+  .how_it_works .yt_video .thumbnil img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+  }
+  .how_it_works .yt_video .thumbnil a {
+    width: 100%;
+  }
+  .how_it_works .yt_video .thumbnil a .play_btn::after {
+    width: 140px;
+    height: 140px;
+  }
+  .how_it_works .yt_video .thumbnil a .play_btn::before {
+    width: 120px;
+    height: 120px;
+  }
+  .how_it_works .yt_video .thumbnil a .play_btn img {
+    height: auto;
   }
 }
