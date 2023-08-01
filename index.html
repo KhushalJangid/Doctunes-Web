@@ -612,6 +612,13 @@
       </div>
       <h5 class="mx-auto my-2">Copyright @2023 DocTunes. All Rights Reserved</h5>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"></script>
+      <script src="js/index.js"></script>
+      <script src="js/carousel.js"></script>
+      <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="module">
       import { initializeApp } from "firebase/app";
       import { getAnalytics } from "firebase/analytics";
@@ -627,22 +634,6 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
-    <script>
-      window.onLoad = function () {
-        setTimeout(function () {
-          var loadingIndicator = document.getElementById("loading_indicator");
-          if (loadingIndicator) {
-            loadingIndicator.remove();
-          }
-        }, 10000);
-      };
-    </script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
-    <script src="js/carousel.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+      <script src="js/contact.js"></script>
   </body>
 </html>
