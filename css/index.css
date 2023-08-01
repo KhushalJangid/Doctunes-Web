@@ -4,10 +4,15 @@
   box-sizing: border-box;
   font-family: inherit;
 }
+@font-face{
+  font-family: "SWITZER";
+  src: url("../assets/Fonts/Switzer-Variable.ttf") format("truetype");
+}
 
 html,
 body {
   font-size: 18px;
+  font-family: "SWITZER","Helvetica","Arial";
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -66,6 +71,10 @@ textarea:focus,
 input:focus {
   border: 2.2px var(--primary) solid;
 }
+iframe{
+  width: 50vw;
+  height: 28.13vw;
+}
 
 .primary {
   color: var(--primary);
@@ -118,6 +127,7 @@ input:focus {
   background-color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 15px;
+  min-height: 64px;
 }
 
 .d-flex {
@@ -262,6 +272,9 @@ input:focus {
   background-size: cover;
   height: 100vh;
 }
+.header-section>.d-flex{
+  min-width:35rem;
+}
 
 .awesome-words {
   display: flex;
@@ -331,7 +344,6 @@ input:focus {
 }
 
 .navbar a {
-  margin: auto 1rem;
   color: white;
 }
 .navbar.scrolled {
@@ -346,10 +358,18 @@ input:focus {
 }
 .navbar-expanded {
   overflow: hidden;
-  height: 35rem;
+  height: 30rem;
   transition: height 0.5s;
   transition-timing-function: linear;
 }
+
+.navbar-expanded h4{
+  margin: 1.5rem auto;
+}
+.navbar-expanded .btn{
+  margin: 1.5rem auto;
+}
+
 #navbar-toggle {
   border: none;
   background-color: transparent;
@@ -372,10 +392,18 @@ input:focus {
   -webkit-transform: rotate(45deg);
 }
 
+.footer-inner{
+display:flex;
+
+width: 100vw;
+justify-content: space-evenly;
+}
+
 .footer {
   width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
   background-image: url(../assets/Footer/Rectangle.svg);
   background-size: cover;
   background-position: center;
@@ -383,6 +411,9 @@ input:focus {
   margin-top: auto;
   /*position:absolute;
     bottom: 0;*/
+}
+.footer a{
+  color: white;
 }
 
 .faq-section {
@@ -449,8 +480,16 @@ input:focus {
   .mobile-only {
     display: none !important;
   }
+  .navbar a{
+    margin: auto 1rem;
+  }
 }
 
+@media screen and (max-width: 1600px) and (orientation: landscape) {
+  html{
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 440px) and (orientation: portrait) {
   .desktop-only {
     display: none !important;
@@ -465,6 +504,9 @@ input:focus {
     flex-direction: column;
     padding: 6rem 1rem;
     height: 145vh;
+  }
+  .header-section>.d-flex{
+    min-width:90vw;
   }
   .header-section > .d-flex > .d-flex {
     flex-direction: column;
@@ -501,7 +543,7 @@ input:focus {
     margin-right: auto;
   }
   .awesome-words,
-  .footer,
+  .footer-inner,
   .contact-section,
   .team-section {
     flex-direction: column;
@@ -524,6 +566,14 @@ input:focus {
   .footer a {
     margin-left: auto;
     margin-right: auto;
+  }
+  .footer .icon-sm{
+    width: 4rem;
+    height: 4rem;
+  }
+  .icon-sm{
+    width:3rem;
+    height: 3rem;
   }
   .accordion-wrapper {
     width: 95%;
@@ -582,31 +632,8 @@ input:focus {
     margin-bottom: 0 !important;
     margin-top: -2px !important;
   }
-  .how_it_works .yt_video {
-    margin-top: -50px;
-  }
-  .how_it_works .yt_video .thumbnil {
-    height: 300px;
-    border-radius: 15px;
-  }
-  .how_it_works .yt_video .thumbnil img {
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 15px;
-  }
-  .how_it_works .yt_video .thumbnil a {
-    width: 100%;
-  }
-  .how_it_works .yt_video .thumbnil a .play_btn::after {
-    width: 140px;
-    height: 140px;
-  }
-  .how_it_works .yt_video .thumbnil a .play_btn::before {
-    width: 120px;
-    height: 120px;
-  }
-  .how_it_works .yt_video .thumbnil a .play_btn img {
-    height: auto;
+  iframe{
+    width: 95vw;
+    height: 53.44vw;
   }
 }

@@ -6,6 +6,7 @@
     <title>DocTunes- PDF & Text to Speech</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/ic_launcher.png" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/spacing.css" />
     <link rel="stylesheet" href="css/carousel.css" />
@@ -26,7 +27,7 @@
         <a href="#team"><h4>Team</h4></a>
         <a href="#contact"><h4>Contact</h4></a>
       </div>
-      <button class="btn">Download</button>
+      <button class="btn" onclick="download()">Download</button>
     </div>
     <div class="navbar mobile-only">
       <div class="d-flex m-auto">
@@ -41,25 +42,36 @@
         <a href="#screenshots"><h4>Screenshots</h4></a>
         <a href="#team"><h4>Team</h4></a>
         <a href="#contact"><h4>Contact</h4></a>
-        <button class="btn">Download</button>
+        <button class="btn" onclick="download()">Download</button>
       </div>
     </div>
     <section class="header-section" id="home">
       <div class="d-flex flex-column white my-auto">
-        <h1 class="my-5">DocTunes<br />Embrace the exrtraordinary</h1>
-        <h4 class="my-5">
+        <div class="d-flex flex-column my-5">
+          <h1 class="m-0">DocTunes</h1>
+          <h2 class="m-0">Tune in your Documents</h2>
+        </div>
+        <!-- <h4 class="my-5">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti nobis voluptate atque tenetur minus
-        </h4>
+        </h4> -->
         <div class="d-flex my-5 justify-content-evenly">
-          <a href="" target="_blank" class="store-btn" rel="noopener noreferrer">
-            <img src="assets/Header Section/Appstore.svg" alt="" />
+          <a
+            href="https://apps.apple.com/us/app/doctunes-pdf-text-to-speech/id6443713628"
+            target="_blank"
+            class="store-btn"
+            rel="noopener noreferrer">
+            <img loading="lazy" src="assets/Header Section/Appstore.svg" alt="" />
           </a>
-          <a href="" target="_blank" class="store-btn" rel="noopener noreferrer">
-            <img src="assets/Header Section/logos_google-play.svg" alt="" />
+          <a
+            href="https://play.google.com/store/apps/details?id=com.boss.audiobookconverter"
+            target="_blank"
+            class="store-btn d-flex"
+            rel="noopener noreferrer">
+            <img loading="lazy" src="assets/Header Section/logos_google-play.svg" alt="" />
           </a>
         </div>
       </div>
-      <img class="header-img" src="assets/Header Section/Mobile.svg" alt="" srcset="" />
+      <img loading="lazy" class="header-img loading="lazy"" src="assets/Header Section/Mobile.svg" alt="" srcset="" />
     </section>
     <section class="row_am how_it_works m-auto" id="how_it_work">
       <!-- container start -->
@@ -68,11 +80,6 @@
           <div class="section_title mx-auto my-5">
             <!-- h2 -->
             <h2><span class="primary">How it works</span> - 3 easy steps</h2>
-            <!-- p -->
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typese tting <br />
-              indus orem Ipsum has beenthe standard dummy.
-            </p>
           </div>
           <div class="step_block my-5">
             <!-- UL -->
@@ -81,13 +88,13 @@
               <li>
                 <div class="step_text" data-aos="fade-right" data-aos-duration="1500">
                   <h4>Download app</h4>
-                  <p>Download App either for Windows, Mac or Android</p>
+                  <p>Download App either for iOS or Android</p>
                 </div>
                 <div class="step_number">
                   <h3>01</h3>
                 </div>
                 <div class="step_img" data-aos="fade-left" data-aos-duration="1500">
-                  <img src="assets/How It works/download_app.jpg" alt="image" />
+                  <img loading="lazy" src="assets/How It works/download_app.jpg" alt="image" />
                 </div>
               </li>
 
@@ -95,14 +102,13 @@
               <li>
                 <div class="step_text" data-aos="fade-left" data-aos-duration="1500">
                   <h4>Create account</h4>
-                  <span>14 days free trial</span>
                   <p>Sign up free for App account. One account for all devices.</p>
                 </div>
                 <div class="step_number">
                   <h3>02</h3>
                 </div>
                 <div class="step_img" data-aos="fade-right" data-aos-duration="1500">
-                  <img src="assets/How It works/create_account.jpg" alt="image" />
+                  <img loading="lazy" src="assets/How It works/create_account.jpg" alt="image" />
                 </div>
               </li>
 
@@ -110,158 +116,170 @@
               <li>
                 <div class="step_text" data-aos="fade-right" data-aos-duration="1500">
                   <h4>It’s done, enjoy the app</h4>
-                  <span>Have any questions check our <a href="#">FAQs</a></span>
-                  <p>Get most amazing app experience,Explore and share the app</p>
+                  <span>Have any questions check our <a href="#faqs">FAQs</a></span>
+                  <p>Get most amazing app experience, Explore and share the app</p>
                 </div>
                 <div class="step_number">
                   <h3>03</h3>
                 </div>
                 <div class="step_img" data-aos="fade-left" data-aos-duration="1500">
-                  <img src="assets/How It works/enjoy_app.jpg" alt="image" />
+                  <img loading="lazy" src="assets/How It works/enjoy_app.jpg" alt="image" />
                 </div>
               </li>
             </ul>
           </div>
+          <iframe
+            src="https://www.youtube.com/embed/S8HpLgpKMac"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
       </div>
     </section>
-    <section class="d-flex flex-column text-center">
+    <section class="d-flex flex-column text-center" id="about">
       <h1 class="mx-auto"><span class="primary">Why is </span>it special?</h1>
-      <h5 class="mx-auto">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sint ullam voluptatum placeat ducimus neque
-        nemo quos voluptates. Illum quo facilis debitis quia inventore, ut ducimus harum suscipit voluptatum autem.
-      </h5>
       <div class="contact-section">
         <div class="card">
-          <img src="assets/Why it's special/smartphone.png" alt="" class="icon mx-auto" />
+          <img loading="lazy" src="assets/Why it's special/smartphone.png" alt="" class="icon mx-auto" />
           <h3>Easy to use</h3>
           <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque quia fugit voluptate, corrupti,
-            explicabo amet ea sit illo ad doloribus. Quas rem magni perferendis sunt quos blanditiis mollitia alias?
+            DocTunes is built by taking consideration for each and every in person in any age groups for ease of use.
           </h4>
         </div>
         <div class="spacer"></div>
         <div class="card">
-          <img src="assets/Why it's special/automation.png" alt="" class="icon mx-auto" />
+          <img loading="lazy" src="assets/Why it's special/automation.png" alt="" class="icon mx-auto" />
           <h3>Customizability</h3>
           <h4>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vel odit itaque quo, soluta, molestias odio,
-            laborum totam incidunt neque libero consectetur quisquam nemo accusamus! Dolor ipsam consectetur quas iusto.
+            DocTunes is built fully customizable in nature. You can customize the speed of the voice output along with
+            pitch too.
           </h4>
         </div>
         <div class="spacer"></div>
         <div class="card">
-          <img src="assets/Why it's special/chip.png" alt="" class="icon mx-auto" />
+          <img loading="lazy" src="assets/Why it's special/chip.png" alt="" class="icon mx-auto" />
           <h3>Powerful AI</h3>
           <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam aliquam asperiores quam fugit. Quas
-            delectus eum recusandae, veniam doloribus ratione, mollitia id aliquam corrupti consectetur fuga nemo dolore
-            vero?
+            DocTunes also have a strong Al for converting your documents to audio based on your preferred language.
           </h4>
         </div>
       </div>
     </section>
     <section class="d-flex flex-column desktop-only my-5" id="features-ds">
       <h1 class="mx-auto"><span class="primary">Features</span> that make app different!</h1>
-      <h4 class="my-4 mx-auto" style="max-width: 35rem">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odio omnis commodi dolore illo mollitia dolores
-        quasi voluptatem ullam praesentium quibusdam, beatae earum, dicta error impedit quas consequuntur, at eum?
-      </h4>
       <div class="d-flex justify-content-center">
         <div class="d-flex flex-column" style="text-align: right">
           <div class="spacer"></div>
           <img
+            loading="lazy"
             src="assets/Features that make/best-customer-experience.png"
             class="icon ml-auto my-2"
             alt=""
             srcset="" />
           <h3 class="primary">Simple UX</h3>
-          <p style="max-width: 10rem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum laboriosam voluptatem cum provident
-            aliquam, aut voluptates rerum!
+          <p style="max-width: 12rem; text-align: justify">
+            DocTunes have a great UI/UX designed for smooth experience for its users. Being simple and smooth it also
+            delivers fast and responsive result for its users.
           </p>
           <div class="spacer"></div>
-          <img src="assets/Features that make/voice-assistant.png" class="icon ml-auto my-2" alt="" srcset="" />
+          <img
+            loading="lazy"
+            src="assets/Features that make/voice-assistant.png"
+            class="icon ml-auto my-2"
+            alt=""
+            srcset="" />
 
           <h3 class="primary">Different Voice</h3>
-          <p style="max-width: 10rem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel dolores, velit ducimus fugiat tempore
+          <p style="max-width: 12rem; text-align: justify">
+            DocTunes have a great UI/UX designed for smooth experience for its users. Being simple and smooth it also
+            delivers fast and responsive result for its users.
           </p>
         </div>
         <div class="spacer"></div>
-        <img src="assets/Features that make/ss.png" style="max-width: 20rem" alt="" srcset="" />
+        <img loading="lazy" src="assets/Features that make/ss.png" style="max-width: 22rem" alt="" srcset="" />
         <div class="spacer"></div>
         <div class="d-flex flex-column">
           <div class="spacer"></div>
-          <img src="assets/Features that make/languages.png" class="icon my-2" alt="" srcset="" />
+          <img loading="lazy" src="assets/Features that make/languages.png" class="icon my-2" alt="" srcset="" />
 
           <h3 class="primary">Multi Language</h3>
-          <p style="max-width: 10rem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum laboriosam voluptatem cum provident
-            aliquam, aut voluptates rerum!
+          <p style="max-width: 12rem; text-align: justify">
+            With DocTunes now users can convert any language to any other. And thus defeating the language barrier,
+            DocTunes stand above all other audio books available.
           </p>
           <div class="spacer"></div>
-          <img src="assets/Features that make/multimedia.png" class="icon my-2" alt="" srcset="" />
+          <img loading="lazy" src="assets/Features that make/multimedia.png" class="icon my-2" alt="" srcset="" />
 
           <h3 class="primary">Custom Playback</h3>
-          <p style="max-width: 10rem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel dolores, velit ducimus fugiat tempore
+          <p style="max-width: 12rem; text-align: justify">
+            Set your preferred playback settings with DocTunes. Users are able to change speed, voice and even pitch of
+            the voice for their comfortability while hearing with DocTunes.
           </p>
         </div>
       </div>
     </section>
     <section class="d-flex flex-column mobile-only" id="features-mb">
       <h1 class="p-3 mx-auto"><span class="primary">Features</span> that make app different!</h1>
-      <h4 class="p-4 text-center" >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odio omnis commodi dolore illo mollitia dolores
-        quasi voluptatem ullam praesentium quibusdam, beatae earum, dicta error impedit quas consequuntur, at eum?
-      </h4>
       <div class="d-flex flex-column">
         <div class="spacer"></div>
-        <img src="assets/Features that make/best-customer-experience.png" class="icon my-2 mx-auto" alt="" srcset="" />
+        <img
+          loading="lazy"
+          src="assets/Features that make/best-customer-experience.png"
+          class="icon my-2 mx-auto"
+          alt=""
+          srcset="" />
         <h3 class="primary mx-auto">Simple UX</h3>
         <p class="p-4 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum laboriosam voluptatem cum provident
-          aliquam, aut voluptates rerum!
+          DocTunes have a great UI/UX designed for smooth experience for its users. Being simple and smooth it also
+          delivers fast and responsive result for its users.
         </p>
         <div class="spacer"></div>
-        <img src="assets/Features that make/voice-assistant.png" class="icon my-2 mx-auto" alt="" srcset="" />
+        <img
+          loading="lazy"
+          src="assets/Features that make/voice-assistant.png"
+          class="icon my-2 mx-auto"
+          alt=""
+          srcset="" />
 
         <h3 class="primary mx-auto">Different Voice</h3>
         <p class="p-4 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel dolores, velit ducimus fugiat tempore
+          DocTunes have a great UI/UX designed for smooth experience for its users. Being simple and smooth it also
+          delivers fast and responsive result for its users.
         </p>
         <div class="spacer"></div>
-        <img src="assets/Features that make/languages.png" class="icon my-2 mx-auto" alt="" srcset="" />
+        <img loading="lazy" src="assets/Features that make/languages.png" class="icon my-2 mx-auto" alt="" srcset="" />
 
         <h3 class="primary mx-auto">Multi Language</h3>
         <p class="p-4 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum laboriosam voluptatem cum provident
-          aliquam, aut voluptates rerum!
+          With DocTunes now users can convert any language to any other. And thus defeating the language barrier,
+          DocTunes stand above all other audio books available.
         </p>
         <div class="spacer"></div>
-        <img src="assets/Features that make/multimedia.png" class="icon my-2 mx-auto" alt="" srcset="" />
+        <img loading="lazy" src="assets/Features that make/multimedia.png" class="icon my-2 mx-auto" alt="" srcset="" />
 
         <h3 class="primary mx-auto">Custom Playback</h3>
         <p class="p-4 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel dolores, velit ducimus fugiat tempore
+          Set your preferred playback settings with DocTunes. Users are able to change speed, voice and even pitch of
+          the voice for their comfortability while hearing with DocTunes.
         </p>
         <div class="spacer"></div>
-        <img src="assets/Features that make/ss.png" class="mx-auto" style="max-width: 20rem" alt="" srcset="" />
+        <img
+          loading="lazy"
+          src="assets/Features that make/ss.png"
+          class="mx-auto"
+          style="max-width: 20rem"
+          alt=""
+          srcset="" />
       </div>
     </section>
     <section class="awesome-words">
       <div class="d-flex flex-column">
         <h1>Some awesome words<br /><span class="primary">about app.</span></h1>
-        <h4 class="my-5" style="max-width: 35rem">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odio omnis commodi dolore illo mollitia
-          dolores quasi voluptatem ullam praesentium quibusdam, beatae earum, dicta error impedit quas consequuntur, at
-          eum?
-        </h4>
         <div class="numcard-outer">
           <div class="numcard">
             <div class="icon-bg my-auto mx-5">
-              <img class="icon-sm" src="assets/Awsome Words/download.png" alt="" srcset="" />
+              <img loading="lazy" class="icon-sm" src="assets/Awsome Words/download.png" alt="" srcset="" />
             </div>
             <div class="d-flex flex-column my-auto">
               <h3 class="m-0">100k+</h3>
@@ -271,7 +289,7 @@
           <div class="spacer-xs"></div>
           <div class="numcard">
             <div class="icon-bg my-auto mx-5">
-              <img class="icon-sm" src="assets/Awsome Words/translation.png" alt="" srcset="" />
+              <img loading="lazy" class="icon-sm" src="assets/Awsome Words/translation.png" alt="" srcset="" />
             </div>
             <div class="d-flex flex-column my-auto">
               <h3 class="m-0">1B+</h3>
@@ -283,7 +301,7 @@
         <div class="numcard-outer">
           <div class="numcard">
             <div class="icon-bg my-auto mx-5">
-              <img class="icon-sm" src="assets/Awsome Words/rating.png" alt="" srcset="" />
+              <img loading="lazy" class="icon-sm" src="assets/Awsome Words/rating.png" alt="" srcset="" />
             </div>
             <div class="d-flex flex-column my-auto">
               <h3 class="m-0">800+</h3>
@@ -293,7 +311,7 @@
           <div class="spacer-xs"></div>
           <div class="numcard">
             <div class="icon-bg my-auto mx-5">
-              <img class="icon-sm" src="assets/Awsome Words/arctic.png" alt="" srcset="" />
+              <img loading="lazy" class="icon-sm" src="assets/Awsome Words/arctic.png" alt="" srcset="" />
             </div>
             <div class="d-flex flex-column my-auto">
               <h3 class="m-0">150+</h3>
@@ -303,99 +321,88 @@
         </div>
       </div>
       <div>
-        <img src="assets/Awsome Words/ss.png" class="screenshot" alt="" srcset="" />
-        <img src="assets/Awsome Words/Voice Popup Light.png" class="voice-dialog" alt="" srcset="" />
+        <img loading="lazy" src="assets/Awsome Words/ss.png" class="screenshot" alt="" srcset="" />
+        <img loading="lazy" src="assets/Awsome Words/voice_popup.webp" class="voice-dialog" alt="" srcset="" />
       </div>
     </section>
     <section class="review-section">
       <h4 class="primary">Testimonial</h4>
       <h2>A Lot of Love From<br />Our Happy Clients</h2>
       <div class="review-inner">
-        <img src="assets/Reviews/1.png" alt="" srcset="" />
-        <img src="assets/Reviews/2.png" alt="" srcset="" />
-        <img src="assets/Reviews/3.png" alt="" srcset="" />
+        <img loading="lazy" src="assets/Reviews/1.png" alt="" srcset="" />
+        <img loading="lazy" src="assets/Reviews/2.png" alt="" srcset="" />
+        <img loading="lazy" src="assets/Reviews/3.png" alt="" srcset="" />
       </div>
     </section>
     <section class="d-flex flex-column text-center" id="pricing">
       <h1 class="mx-auto">Best & simple <span class="primary"> pricing</span></h1>
-      <h5 class="mx-auto px-4 text-center">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sint ullam voluptatum placeat ducimus neque
-        nemo quos voluptates. Illum quo facilis debitis quia inventore, ut ducimus harum suscipit voluptatum autem.
-      </h5>
       <div class="contact-section">
         <div class="pricing-card">
-          <img src="assets/Pricing/image 1.png" class="icon-xl m-auto" alt="" />
+          <img loading="lazy" src="assets/Pricing/image 1.png" class="icon-xl m-auto" alt="" />
           <h2 class="black">Standard</h2>
-          <h4>For the Basics</h4>
           <h1 class="primary">$0</h1>
-          <h6 class="my-1">No Premium Voice</h6>
-          <h6 class="my-1">No Advanced Translation</h6>
-          <h6 class="my-1">No Download</h6>
-          <h6 class="my-1">No Scanned PDF</h6>
-          <h6 class="my-1">Ads Interruption</h6>
-          <button class="btn-outline mx-auto my-5">Buy Now</button>
+          <h4 class="my-1">No Premium Voice</h4>
+          <h4 class="my-1">No Advanced Translation</h4>
+          <h4 class="my-1">No Download</h4>
+          <h4 class="my-1">No Scanned PDF</h4>
+          <h4 class="my-1">Ads Interruption</h4>
+          <button class="btn-outline mx-auto my-5" onclick="download()">Buy Now</button>
         </div>
         <div class="spacer"></div>
         <div class="pricing-card pricing-card-active">
-          <img src="assets/Pricing/image 2.png" class="icon-xl m-auto" alt="" />
+          <img loading="lazy" src="assets/Pricing/image 2.png" class="icon-xl m-auto" alt="" />
           <h2>Yearly Plan</h2>
-          <h4>For the Basics</h4>
-          <h1>$0</h1>
-          <h6 class="my-1">No Premium Voice</h6>
-          <h6 class="my-1">No Advanced Translation</h6>
-          <h6 class="my-1">No Download</h6>
-          <h6 class="my-1">No Scanned PDF</h6>
-          <h6 class="my-1">Ads Interruption</h6>
-          <button class="btn-outline mx-auto my-5">Buy Now</button>
+          <h1>$49.99</h1>
+          <h4 class="my-1">500+ Premium Voices</h4>
+          <h4 class="my-1">Advanced Translation</h4>
+          <h4 class="my-1">Download Feature</h4>
+          <h4 class="my-1">Support Scanned PDF</h4>
+          <h4 class="my-1">No ADs Interruptionr</h4>
+          <button class="btn-outline mx-auto my-5" onclick="download()">Buy Now</button>
         </div>
         <div class="spacer"></div>
         <div class="pricing-card">
-          <img src="assets/Pricing/image 3.png" class="icon-xl m-auto" alt="" />
+          <img loading="lazy" src="assets/Pricing/image 3.png" class="icon-xl m-auto" alt="" />
           <h2 class="black">Monthly Plan</h2>
-          <h4>For the Basics</h4>
-          <h1 class="primary">$0</h1>
-          <h6 class="my-1">No Premium Voice</h6>
-          <h6 class="my-1">No Advanced Translation</h6>
-          <h6 class="my-1">No Download</h6>
-          <h6 class="my-1">No Scanned PDF</h6>
-          <h6 class="my-1">Ads Interruption</h6>
-          <button class="btn-outline mx-auto my-5">Buy Now</button>
+          <h1 class="primary">$4.99</h1>
+          <h4 class="my-1">500+ Premium Voices</h4>
+          <h4 class="my-1">Advanced Translation</h4>
+          <h4 class="my-1">Download Feature</h4>
+          <h4 class="my-1">Support Scanned PDF</h4>
+          <h4 class="my-1">No ADs Interruptionr</h4>
+          <button class="btn-outline mx-auto my-5" onclick="download()">Buy Now</button>
         </div>
       </div>
     </section>
     <section class="d-flex flex-column text-center" id="screenshots">
       <h1 class="mx-auto my-3">Beautiful <span class="primary">Interface</span></h1>
-      <h5 class="mx-auto mb-5 px-4 text-center">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sint ullam voluptatum placeat ducimus neque
-        nemo quos voluptates. Illum quo facilis debitis quia inventore, ut ducimus harum suscipit voluptatum autem.
-      </h5>
       <div id="screen_slider" class="owl-carousel owl-theme my-5">
-        <img src="assets/Screens/1.PNG" alt="image" />
-        <img src="assets/Screens/2.PNG" alt="image" />
-        <img src="assets/Screens/3.PNG" alt="image" />
-        <img src="assets/Screens/4.PNG" alt="image" />
-        <img src="assets/Screens/5.PNG" alt="image" />
-        <img src="assets/Screens/6.PNG" alt="image" />
-        <img src="assets/Screens/7.PNG" alt="image" />
-        <img src="assets/Screens/8.PNG" alt="image" />
-        <img src="assets/Screens/9.PNG" alt="image" />
-        <img src="assets/Screens/10.PNG" alt="image" />
-        <img src="assets/Screens/11.PNG" alt="image" />
-        <img src="assets/Screens/12.PNG" alt="image" />
+        <img loading="lazy" src="assets/Screens/1.PNG" alt="image" />
+        <img loading="lazy" src="assets/Screens/2.PNG" alt="image" />
+        <img loading="lazy" src="assets/Screens/3.PNG" alt="image" />
+        <img loading="lazy" src="assets/Screens/4.PNG" alt="image" />
+        <img loading="lazy" src="assets/Screens/5.PNG" alt="image" />
+        <img loading="lazy" src="assets/Screens/6.PNG" alt="image" />
+        <img loading="lazy" src="assets/Screens/7.PNG" alt="image" />
+        <img loading="lazy" src="assets/Screens/8.PNG" alt="image" />
+        <img loading="lazy" src="assets/Screens/9.PNG" alt="image" />
+        <img loading="lazy" src="assets/Screens/10.PNG" alt="image" />
+        <img loading="lazy" src="assets/Screens/11.PNG" alt="image" />
+        <img loading="lazy" src="assets/Screens/12.PNG" alt="image" />
       </div>
     </section>
-    <section class="faq-section">
+    <section class="faq-section" id="faqs">
       <h1><span class="primary">FAQ</span> - Frequently Asked Questions</h1>
-      <h4 class="mx-auto secondary mb-5" style="width: 70%">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio ratione ut nostrum incidunt.
-        Quia fuga illum a repudiandae nihil, repellat quaerat, aut error atque pariatur iusto quasi odio asperiores.
-      </h4>
       <div class="my-3 mx-auto accordion-wrapper">
         <button class="accordion">How can I pay?</button>
         <div class="panel">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore ab quam suscipit officiis modi quae
-            odit laborum. Labore error commodi porro dolores eligendi aliquid dolorem hic earum assumenda deserunt?
+            DocTunes offers a flexible and convenient subscription purchasing experience, accommodating a variety of
+            payment methods to suit your preferences. Whether you prefer using credit or debit cards, you can seamlessly
+            complete your subscription purchase with ease. Additionally, we support UPI (Unified Payments Interface),
+            allowing you to conveniently make payments through this widely-used payment method. With multiple options
+            available, we strive to ensure a smooth and hassle-free transaction process, empowering you to access all
+            the premium features and benefits DocTunes has to offer.
           </p>
         </div>
       </div>
@@ -403,18 +410,42 @@
         <button class="accordion">How to setup account?</button>
         <div class="panel">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere consequuntur perspiciatis hic tempora
-            ducimus iusto! Quod est laboriosam tempora nulla deserunt eum fugit? Voluptate voluptatum officia enim,
-            consequatur possimus labore.
+            DocTunes provides a hassle-free and user-friendly account creation process, offering two convenient options.
+            Firstly, you can effortlessly create an account by filling out the registration form, where you can provide
+            your necessary details. Alternatively, you have the option to streamline the process by directly signing in
+            with your existing Google or Apple IDs. This allows for a seamless experience, ensuring that you can quickly
+            access and enjoy all the features and benefits DocTunes has to offer.
           </p>
         </div>
       </div>
       <div class="my-3 mx-auto accordion-wrapper">
-        <button class="accordion">What is the process to get refund?</button>
+        <button class="accordion">Why do I buy subscription plan, What we are getting with it ?</button>
         <div class="panel">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis non eum, enim vel asperiores omnis quas,
-            dolore itaque beatae mollitia tempora nobis a illum in velit repellat placeat aperiam sequi.
+            By subscribing to our premium plan, DocTunes unlocks a range of exceptional features to enhance your
+            experience. Enjoy access to over 500+ Premium Human-Like voices, meticulously designed to bring your
+            audiobooks to life with unmatched realism and clarity. Additionally, benefit from advanced translation
+            services, ensuring your documents are accurately translated for a global audience. Say goodbye to
+            interruptions with our ad-free experience, immersing yourself fully in the content. Want to listen offline?
+            No problem! Our download feature allows you to save and enjoy your audiobooks anytime, anywhere. We go the
+            extra mile by supporting handwritten documents, expanding the versatility of our platform to cater to
+            various content formats. Upgrade to our subscription plan and unlock the full potential of DocTunes.
+          </p>
+        </div>
+      </div>
+      <div class="my-3 mx-auto accordion-wrapper">
+        <button class="accordion">What is the process to refund ?</button>
+        <div class="panel">
+          <p>
+            We deeply regret any inconvenience you may have encountered with your subscription and value your
+            satisfaction as our top priority. If you are experiencing any issues, we encourage you to reach out to our
+            dedicated support team, who are ready to assist you in resolving any concerns or problems you may have
+            encountered. However, if you still wish to proceed with canceling your subscription with DocTunes, we kindly
+            request you to inform us via email at
+            <a class="primary" href="mailto:support@doctunes.io">support@doctunes.io</a>. Please include the reason for
+            cancellation and provide proof of your subscription. Our dedicated team will promptly initiate the refund
+            process and ensure a smooth resolution to your request. Your feedback is valuable to us, and we are
+            committed to delivering exceptional service even during the cancellation process.
           </p>
         </div>
       </div>
@@ -422,52 +453,73 @@
     <section class="d-flex flex-column text-center my-5">
       <h1 class="primary my-5">Our Partners</h1>
       <div class="d-flex justify-content-evenly overflow-auto my-5">
-        <img src="assets/Partners/acir-logo.png" alt="" class="sponsor-logo" />
-        <img src="assets/Partners/GSEA_CMYK_primary.jpg" alt="" class="sponsor-logo" />
-        <img src="assets/Partners/gsflogo.png" alt="" class="sponsor-logo" />
-        <img src="assets/Partners/Istart.png" alt="" class="sponsor-logo" />
-        <img src="assets/Partners/logo.png" alt="" class="sponsor-logo" />
-        <img src="assets/Partners/meity startup.png" alt="" class="sponsor-logo" />
+        <img loading="lazy" src="assets/Partners/acir-logo.png" alt="" class="sponsor-logo" />
+        <img loading="lazy" src="assets/Partners/GSEA_CMYK_primary.jpg" alt="" class="sponsor-logo" />
+        <img loading="lazy" src="assets/Partners/gsflogo.png" alt="" class="sponsor-logo" />
+        <img loading="lazy" src="assets/Partners/Istart.png" alt="" class="sponsor-logo" />
+        <img loading="lazy" src="assets/Partners/logo.png" alt="" class="sponsor-logo" />
+        <img loading="lazy" src="assets/Partners/meity startup.png" alt="" class="sponsor-logo" />
       </div>
     </section>
     <section class="d-flex flex-column text-center my-3" id="team">
       <h1 class="primary">Our Team</h1>
       <div class="team-section">
         <div class="card">
-          <img src="assets/Avatars/kss.jpg" alt="" class="avatar mx-auto my-5" />
+          <img loading="lazy" src="assets/Avatars/kss.jpg" alt="" class="avatar mx-auto my-5" />
           <h3 class="m-0">Kunal Singh</h3>
           <h4>Director & Co-founder</h4>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-          <img class="icon-sm my-5 mx-auto" src="assets/Icons/LinkedIn.svg">
-          </a>
+          <div class="d-flex justify-content-evenly my-5">
+            <a
+              href="https://www.linkedin.com/in/kunal-singh-shekhawat-3904ba196"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img loading="lazy" class="icon-sm" src="assets/Icons/LinkedIn.svg" />
+            </a>
+            <a
+              href="https://instagram.com/kunal_singh_s10?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img loading="lazy" class="icon-sm" src="assets/Icons/Instagram.svg" />
+            </a>
+          </div>
         </div>
         <div class="spacer"></div>
         <div class="card">
-          <img src="assets/Avatars/db.JPG" alt="" class="avatar mx-auto my-5" />
+          <img loading="lazy" src="assets/Avatars/db.JPG" alt="" class="avatar mx-auto my-5" />
           <h3 class="m-0">Dewang Bharadwaj</h3>
           <h4>Director & Co-founder</h4>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            <img class="icon-sm my-5 mx-auto" src="assets/Icons/LinkedIn.svg">
+          <div class="d-flex justify-content-evenly my-5">
+            <a href="https://www.linkedin.com/in/dewang-bhardwaj-7718091b4" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" class="icon-sm" src="assets/Icons/LinkedIn.svg" />
             </a>
+            <a
+              href="https://instagram.com/dewang__bhardwaj?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img loading="lazy" class="icon-sm" src="assets/Icons/Instagram.svg" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="d-flex flex-column text-center my-3" id="contact">
       <h1 class="primary">Contact Us</h1>
-      <h5 class="my-3">If you have a query, get in touch with us, we will revert back quickly</h5>
       <div class="contact-section">
-        <div class="contact-form">
+        <form class="contact-form"
+        method="POST"
+        enctype="multipart/form-data"
+        name="EmailForm">
           <h2>Leave a <span class="primary">message</span></h2>
           <h5 class="">Fill up the form below, our team will get back soon</h5>
-          <input class="mx-auto" type="text" placeholder="Name" />
-          <input class="mx-auto" type="email" placeholder="Your Email" />
-          <textarea class="mx-auto" type="text" rows="6" placeholder="Your Message"></textarea>
-          <button class="mx-auto btn">Send Message</button>
-        </div>
+          <input class="mx-auto" type="text" placeholder="Your Name" id="name" name="Contact-Name" />
+          <input class="mx-auto" type="email" placeholder="Your Email" id="email" name="Contact-Email"  />
+          <textarea class="mx-auto" type="text" rows="6" id="message" placeholder="Your Message" name="Contact-Message" ></textarea>
+          <button class="mx-auto btn" id="submit">Send Message</button>
+        </form>
         <div class="spacer"></div>
         <div class="d-flex flex-column text-left p-5">
-          <img class="icon my-4" src="assets/Contact Us/image 4.png" alt="" />
+          <img loading="lazy" class="icon my-4" src="assets/Contact Us/image 4.png" alt="" />
           <h2>Have a <span class="primary">question?</span></h2>
           <h5 class="secondary">
             If you have any question about our product, service<br />
@@ -475,65 +527,119 @@
           </h5>
           <div class="btn my-4">Read FAQs</div>
           <div class="d-flex my-3">
-            <img class="icon mb-auto" src="assets/Contact Us/Email us.svg" alt="" />
+            <img loading="lazy" class="icon mb-auto" src="assets/Contact Us/Email us.svg" alt="" />
             <div class="d-flex flex-column m-auto">
               <h3 class="m-0">Email Us</h3>
-              <a class="secondary m-0" href=""><h4>example@doctunes.io</h4></a>
+              <a class="secondary m-0" href="mailto:support@doctunes.io"><h4>support@doctunes.io</h4></a>
             </div>
           </div>
-          <div class="d-flex my-3">
-            <img class="icon mb-auto" src="assets/Contact Us/Call us.svg" alt="" />
+          <!-- <div class="d-flex my-3">
+            <img loading="lazy" class="icon mb-auto" src="assets/Contact Us/Call us.svg" alt="" />
             <div class="d-flex flex-column m-auto">
               <h3 class="m-0">Call Us</h3>
               <a class="secondary m-0" href=""><h4>example@doctunes.io</h4></a>
             </div>
-          </div>
+          </div> -->
           <div class="d-flex my-3">
-            <img class="icon mb-auto" src="assets/Contact Us/Visit us.svg" alt="" />
+            <img loading="lazy" class="icon mb-auto" src="assets/Contact Us/Visit us.svg" alt="" />
             <div class="d-flex flex-column m-auto">
               <h3 class="m-0">Visit Us</h3>
-              <a class="secondary m-0" href=""><h4>example@doctunes.io</h4></a>
+              <h4 class="secondary">75/17 Tagore Lane, <br />Mansarovar, Jaipur <br />302020</h4>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="footer py-5 white">
-      <div class="d-flex flex-column">
-        <h2>DocTunes</h2>
-        <a class="white my-3" href="mailto:support@doctunes.io"><h4>support@doctunes.io</h4></a>
-        <a class="white my-3" href=""><h4>+91-9000-000-000</h4></a>
-        <div class="d-flex my-3"></div>
+    <footer class="footer white">
+      <div class="footer-inner py-5">
+        <div class="d-flex flex-column">
+          <h2>DocTunes</h2>
+          <a class="white my-3" href="mailto:support@doctunes.io"><h4>support@doctunes.io</h4></a>
+          <div class="d-flex justify-content-evenly my-5">
+            <a
+              href="https://twitter.com/DocTunes_io?t=IHNIwEu4ELNFUsYOkjfGNg&s=08"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img loading="lazy" class="icon-sm" src="assets/Icons/twitter.svg" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/doctunes-audiotech-private-limited/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img loading="lazy" class="icon-sm" src="assets/Icons/LinkedIn.svg" />
+            </a>
+            <a
+              href="https://instagram.com/doctunes.io?igshid=OGQ5ZDc2ODk2ZA=="
+              target="_blank"
+              rel="noopener noreferrer">
+              <img loading="lazy" class="icon-sm" src="assets/Icons/Instagram.svg" />
+            </a>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <h3>Useful Links</h3>
+          <a href="#home"><h4>Home</h4></a>
+          <a href="#about"><h4>About Us</h4></a>
+          <a href="#features"><h4>Services</h4></a>
+          <a href="#contact"><h4>Contact Us</h4></a>
+          <a href="https://kss-1000.github.io/" target="_blank"><h4>Privacy Policy</h4></a>
+        </div>
+        <div class="d-flex flex-column">
+          <h3>Help & Support</h3>
+          <a href="#faqs"><h4>FAQs</h4></a>
+          <a href="#contact"><h4>Support</h4></a>
+          <a href="#how_it_work"><h4>How it works</h4></a>
+          <a href="https://kss-10.github.io/EULA/"><h4>Terms & Conditions</h4></a>
+          <a href="https://kss-1000.github.io/" target="_blank"><h4>Privacy Policy</h4></a>
+        </div>
+        <div class="d-flex flex-column">
+          <h3>Let's Try out</h3>
+          <a
+            href="https://apps.apple.com/us/app/doctunes-pdf-text-to-speech/id6443713628"
+            target="_blank"
+            class="store-btn mx-0 my-5"
+            rel="noopener noreferrer">
+            <img loading="lazy" src="assets/Header Section/Appstore.svg" alt="" />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.boss.audiobookconverter"
+            target="_blank"
+            class="store-btn mx-0 d-flex"
+            rel="noopener noreferrer">
+            <img loading="lazy" src="assets/Header Section/logos_google-play.svg" alt="" />
+          </a>
+        </div>
       </div>
-      <div class="d-flex flex-column">
-        <h3>Useful Links</h3>
-        <h4>Home</h4>
-        <h4>About Us</h4>
-        <h4>Services</h4>
-        <h4>Contact Us</h4>
-        <h4>Privacy Policy</h4>
-      </div>
-      <div class="d-flex flex-column">
-        <h3>Help & Support</h3>
-        <h4>FAQs</h4>
-        <h4>Support</h4>
-        <h4>How it works</h4>
-        <h4>Terms & Conditions</h4>
-        <h4>Privacy Policy</h4>
-      </div>
-      <div class="d-flex flex-column">
-        <h3>Let's Try out</h3>
-        <a href="" target="_blank" class="store-btn mx-0 my-5" rel="noopener noreferrer">
-          <img src="assets/Header Section/Appstore.svg" alt="" />
-        </a>
-        <a href="" target="_blank" class="store-btn mx-0" rel="noopener noreferrer">
-          <img src="assets/Header Section/logos_google-play.svg" alt="" />
-        </a>
-      </div>
+      <h5 class="mx-auto my-2">Copyright @2023 DocTunes. All Rights Reserved</h5>
     </footer>
+    <script type="module">
+      import { initializeApp } from "firebase/app";
+      import { getAnalytics } from "firebase/analytics";
+      const firebaseConfig = {
+        apiKey: "AIzaSyDUOZKhFxRp31rLuqm691R0G_u62IYITtw",
+        authDomain: "test-subscription-332105.firebaseapp.com",
+        projectId: "test-subscription-332105",
+        storageBucket: "test-subscription-332105.appspot.com",
+        messagingSenderId: "204239450185",
+        appId: "1:204239450185:web:760bfef5dd7981171b8f98",
+        measurementId: "G-WGB0YPNRH3"
+      };
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <script>
+      window.onLoad = function () {
+        setTimeout(function () {
+          var loadingIndicator = document.getElementById("loading_indicator");
+          if (loadingIndicator) {
+            loadingIndicator.remove();
+          }
+        }, 10000);
+      };
+    </script>
     <script
-      src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
-      integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <script src="js/carousel.js"></script>
