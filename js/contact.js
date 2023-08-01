@@ -1,8 +1,8 @@
-const db = getFirestore(app);
 import {
     collection,
     addDoc
 } from "firebase/firestore";
+const db = getFirestore(app);
 
 //Get Form Values
 const name = document.getElementById('name').value

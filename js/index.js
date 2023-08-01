@@ -76,7 +76,7 @@ $(document).ready(function () {
 function download() {
   var userAgent = navigator.userAgent || window.opera;
   // iOS detection from: http://stackoverflow.com/a/9039885/177710
-  if (/iPad|iPhone|iPod|Macintosh|Apple/.test(userAgent) && !window.MSStream) {
+  if (/iPad|iPhone|iPod|Macintosh/.test(userAgent) && !window.MSStream) {
     console.log("ios");
     window.open('https://apps.apple.com/us/app/doctunes-pdf-text-to-speech/id6443713628');
   } else {

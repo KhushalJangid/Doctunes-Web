@@ -476,6 +476,11 @@ justify-content: space-evenly;
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
+.feature-img{
+  width: 24rem;
+  height:47rem;
+}
+
 @media screen and (min-width: 440px) and (orientation: landscape) {
   .mobile-only {
     display: none !important;
@@ -493,6 +498,14 @@ justify-content: space-evenly;
 @media screen and (max-width: 440px) and (orientation: portrait) {
   .desktop-only {
     display: none !important;
+  }
+  .btn{
+    max-width: 70%;
+  padding: 0.5rem 1rem;
+  }
+  .btn-outline{
+    max-width: 70%;
+  padding: 0.5rem 1rem;
   }
   .navbar {
     padding: 0 5rem;
@@ -527,7 +540,7 @@ justify-content: space-evenly;
   }
   .contact-form {
     width: 85vw;
-    height: 106.25vw;
+    height: 150vw;
     margin-left: auto;
     margin-top: auto;
   }
