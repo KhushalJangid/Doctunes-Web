@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>DocTunes- PDF & Text to Speech</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="DocTunes is an app based platform, where users can convert there documents to audiobook in there native language. It supports more than 70+ languages and 500+ different male/female voices. The vision of the company is to provide the world enriching experience of understanding and listening to their documents by avoiding the language barrier." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="assets/ic_launcher.png" />
     <link rel="stylesheet" href="css/index.css" />
@@ -167,7 +169,7 @@
       </div>
     </section>
     <section class="d-flex flex-column desktop-only my-5" id="features-ds">
-      <h1 class="mx-auto"><span class="primary">Features</span> that make app different!</h1>
+      <h1 class="mx-auto"><span class="primary">Features</span> that make app different</h1>
       <div class="d-flex justify-content-center">
         <div class="d-flex flex-column" style="text-align: right">
           <div class="spacer"></div>
@@ -192,12 +194,12 @@
 
           <h3 class="primary">Different Voice</h3>
           <p style="max-width: 12rem; text-align: justify">
-            DocTunes have a great UI/UX designed for smooth experience for its users. Being simple and smooth it also
-            delivers fast and responsive result for its users.
+            DocTunes offer different voice outputs for different languages. Now users can even listen to their documents
+            in different voice for their own comfortability.
           </p>
         </div>
         <div class="spacer"></div>
-        <img loading="lazy" src="assets/Features that make/ss.png" style="max-width: 22rem" alt="" srcset="" />
+        <img loading="lazy" src="assets/Features that make/ss.png" class="feature-img" alt="" srcset="" />
         <div class="spacer"></div>
         <div class="d-flex flex-column">
           <div class="spacer"></div>
@@ -220,7 +222,7 @@
       </div>
     </section>
     <section class="d-flex flex-column mobile-only" id="features-mb">
-      <h1 class="p-3 mx-auto"><span class="primary">Features</span> that make app different!</h1>
+      <h1 class="p-3 mx-auto"><span class="primary">Features</span> that made us different</h1>
       <div class="d-flex flex-column">
         <div class="spacer"></div>
         <img
@@ -244,8 +246,8 @@
 
         <h3 class="primary mx-auto">Different Voice</h3>
         <p class="p-4 text-center">
-          DocTunes have a great UI/UX designed for smooth experience for its users. Being simple and smooth it also
-          delivers fast and responsive result for its users.
+          DocTunes offer different voice outputs for different languages. Now users can even listen to their documents
+          in different voice for their own comfortability.
         </p>
         <div class="spacer"></div>
         <img loading="lazy" src="assets/Features that make/languages.png" class="icon my-2 mx-auto" alt="" srcset="" />
@@ -268,7 +270,7 @@
           loading="lazy"
           src="assets/Features that make/ss.png"
           class="mx-auto"
-          style="max-width: 20rem"
+          style="max-width: 90vw"
           alt=""
           srcset="" />
       </div>
@@ -320,7 +322,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div style="max-height: 40rem">
         <img loading="lazy" src="assets/Awsome Words/ss.png" class="screenshot" alt="" srcset="" />
         <img loading="lazy" src="assets/Awsome Words/voice_popup.webp" class="voice-dialog" alt="" srcset="" />
       </div>
@@ -506,15 +508,18 @@
     <section class="d-flex flex-column text-center my-3" id="contact">
       <h1 class="primary">Contact Us</h1>
       <div class="contact-section">
-        <form class="contact-form"
-        method="POST"
-        enctype="multipart/form-data"
-        name="EmailForm">
+        <form class="contact-form" method="POST" enctype="multipart/form-data" name="EmailForm">
           <h2>Leave a <span class="primary">message</span></h2>
           <h5 class="">Fill up the form below, our team will get back soon</h5>
           <input class="mx-auto" type="text" placeholder="Your Name" id="name" name="Contact-Name" />
-          <input class="mx-auto" type="email" placeholder="Your Email" id="email" name="Contact-Email"  />
-          <textarea class="mx-auto" type="text" rows="6" id="message" placeholder="Your Message" name="Contact-Message" ></textarea>
+          <input class="mx-auto" type="email" placeholder="Your Email" id="email" name="Contact-Email" />
+          <textarea
+            class="mx-auto"
+            type="text"
+            rows="6"
+            id="message"
+            placeholder="Your Message"
+            name="Contact-Message"></textarea>
           <button class="mx-auto btn" id="submit">Send Message</button>
         </form>
         <div class="spacer"></div>
@@ -525,7 +530,7 @@
             If you have any question about our product, service<br />
             payment or company, Visit our <a class="primary" href="">FAQs page</a>
           </h5>
-          <div class="btn my-4">Read FAQs</div>
+          <a href="#faqs" class="btn my-4">Read FAQs</a>
           <div class="d-flex my-3">
             <img loading="lazy" class="icon mb-auto" src="assets/Contact Us/Email us.svg" alt="" />
             <div class="d-flex flex-column m-auto">
@@ -616,9 +621,9 @@
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"></script>
-      <script src="js/index.js"></script>
-      <script src="js/carousel.js"></script>
-      <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="module">
       import { initializeApp } from "firebase/app";
       import { getAnalytics } from "firebase/analytics";
@@ -629,11 +634,11 @@
         storageBucket: "test-subscription-332105.appspot.com",
         messagingSenderId: "204239450185",
         appId: "1:204239450185:web:760bfef5dd7981171b8f98",
-        measurementId: "G-WGB0YPNRH3"
+        measurementId: "G-WGB0YPNRH3",
       };
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
-      <script src="js/contact.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
